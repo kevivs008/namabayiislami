@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NamaBayiIslami — Pencari Nama Bayi Islami yang Terpercaya Artinya</title>
+<meta name="description" content="Cari nama bayi Islami lengkap dengan tulisan Arab, arti yang dicek silang dari Al-Qur'an, Asmaul Husna, dan sejarah sahabat. Gratis, tanpa akun, dibuat untuk Bunda dan Ayah di Indonesia.">
+<link rel="canonical" href="https://namabayiislami.kevivs-work.workers.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NamaBayiIslami">
+<meta property="og:title" content="NamaBayiIslami — nama bayi Islami yang artinya bisa dipertanggungjawabkan">
+<meta property="og:description" content="Pencari nama bayi Islami: tulisan Arab, arti terverifikasi, tema, sumber, sampai usulan panggilan sayang.">
+<meta property="og:url" content="https://namabayiislami.kevivs-work.workers.dev/">
+<meta property="og:locale" content="id_ID">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-top">
+    <a class="brand" href="/" aria-label="NamaBayiIslami">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#123f2e"/><path d="M20 7l3 7 7.5-2.5L28 19l7 4-7 4 2.5 7.5L23 32l-3 7-3-7-7.5 2.5L12 27l-7-4 7-4-2.5-7.5L17 14z" fill="none" stroke="#d4b26a" stroke-width="1.6" stroke-linejoin="round"/><circle cx="20" cy="20" r="3.4" fill="#d4b26a"/></svg>
+      <span class="t">Nama<b>Bayi</b>Islami</span>
+    </a>
+    <nav class="utama" aria-label="Menu utama">
+      <a href="/" class="aktif">Cari Nama</a>
+      <a href="rangkaian.html">Rangkaian</a>
+      <a href="metodologi.html">Metodologi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="pola" aria-hidden="true"><defs><pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M36 8l6.5 15.5L58 17l-6.5 15.5L67 39l-15.5 6.5L58 61l-16-6.5L36 70l-6-15.5L14 61l6.5-15.5L5 39l15.5-6.5L14 17l15.5 6.5z" fill="none" stroke="#1b5e43" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>
+  <div class="hero-in">
+    <span class="kicker">Untuk si kecil, insya Allah</span>
+    <h1>Setiap nama membawa doa. Pilihlah yang artinya benar.</h1>
+    <p>Ratusan nama Islami dengan tulisan Arab, arti yang dicek silang dari sumbernya, dan usulan panggilan sayang — semua gratis, langsung dari peramban.</p>
+    <div class="garis-emas" aria-hidden="true"></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="panel-cari" aria-label="Pencarian nama">
+    <div class="kotak-cari">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="cari" type="search" placeholder="Tulis nama atau arti… mis. cahaya, Aisyah, Fathir" autocomplete="off" aria-label="Cari nama atau arti">
+    </div>
+
+    <div class="f-grup" data-f="gender">
+      <span class="f-label">Jenis</span>
+      <div class="pil">
+        <button type="button" class="on">Semua</button>
+        <button type="button" data-val="L">Laki-laki</button>
+        <button type="button" data-val="P">Perempuan</button>
+      </div>
+    </div>
+
+    <div class="f-grup">
+      <span class="f-label">Aksara awal</span>
+      <div class="az-scroll"><div class="strip-az" id="banding-huruf"></div></div>
+    </div>
+
+    <div class="f-grup">
+      <span class="f-label">Saring</span>
+      <select class="f" id="f-tema" aria-label="Tema arti">
+        <option value="">Semua tema</option>
+        <option value="cahaya">Cahaya</option>
+        <option value="keindahan">Keindahan</option>
+        <option value="kekuatan">Kekuatan</option>
+        <option value="hikmah">Kebijaksanaan</option>
+        <option value="kebaikan">Kebaikan</option>
+        <option value="kemuliaan">Kemuliaan</option>
+        <option value="iman-takwa">Iman & Takwa</option>
+        <option value="surga">Surga</option>
+        <option value="harapan">Doa & Harapan</option>
+        <option value="ketenangan">Ketenangan</option>
+      </select>
+      <select class="f" id="f-sumber" aria-label="Sumber nama">
+        <option value="">Semua sumber</option>
+        <option value="quran">Kata/figura Al-Qur'an</option>
+        <option value="nabi">Nama nabi</option>
+        <option value="sahabat">Sahabat Nabi</option>
+        <option value="sahabiyah">Sahabiyah</option>
+        <option value="asmaul">Asmaul Husna</option>
+      </select>
+      <select class="f" id="f-suku" aria-label="Jumlah suku kata">
+        <option value="">Suku kata berapa pun</option>
+        <option value="1">1 suku</option>
+        <option value="2">2 suku</option>
+        <option value="3">3 suku</option>
+        <option value="4">4 suku atau lebih</option>
+      </select>
+      <select class="f" id="f-panjang" aria-label="Panjang nama">
+        <option value="">Panjang berapa pun</option>
+        <option value="pendek">Pendek (≤5 huruf)</option>
+        <option value="sedang">Sedang (6–8 huruf)</option>
+        <option value="panjang">Panjang (≥9 huruf)</option>
+      </select>
+    </div>
+
+    <div class="f-grup">
+      <span class="f-label">Urutan</span>
+      <select class="f" id="f-urut" aria-label="Urutan hasil">
+        <option value="pop">Paling dicari dulu</option>
+        <option value="unik">Paling unik dulu</option>
+        <option value="az">A sampai Z</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="info-hasil">
+    <span class="jml" id="jml-hasil">&nbsp;</span>
+    <span class="ket">Semua arti dicek silang — lihat <a href="metodologi.html">metodologi kami</a>.</span>
+  </div>
+
+  <section id="grid-nama" class="grid-nama" aria-live="polite"></section>
+
+  <div id="kosong" class="kosong-hasil sembunyi">
+    <p class="serif">Belum ada nama yang cocok, Bun.</p>
+    <p>Coba kurangi saringan, atau ganti kata kuncinya.<span class="saran"></span></p>
+  </div>
+</main>
+
+<section class="pita">
+  <div class="wrap grid">
+    <div>
+      <h2>Kenapa akurasi itu penting bagi kami</h2>
+      <p>Nama adalah doa yang dipanjatkan setiap hari seumur hidup. Karena itu kami tidak asal menumpahkan daftar: setiap arti di situs ini dicek silang dari beberapa rujukan, dan kalau maknanya tidak bisa dipertanggungjawabkan, nama itu tidak kami tampilkan dulu.</p>
+      <div class="butir"><b>Lebih sedikit tapi benar</b> — itu sumpah kami.</div>
+    </div>
+    <ul>
+      <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Setiap nama mencantumkan rujukannya: ayat, hadits, atau sosok sahabat.</li>
+      <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Tulisan Arab lengkap dengan harakat, siap ditulis di undangan.</li>
+      <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Keyakinan arti dilabeli jujur — tidak semua makna sama pastinya.</li>
+      <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Label "Tidak Pasaran" menandai nama yang jarang dipakai tapi terverifikasi.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Dibuat dengan teliti untuk orang tua Muslim Indonesia.</span>
+    <span><a href="metodologi.html">Metodologi & sumber</a></span>
+  </div>
+</footer>
+
+<button class="tombol-favorit" id="buka-favorit" type="button" aria-label="Buka daftar nama tersimpan">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.8 4.6a5.5 5.5 0 0 0-7.8 0L12 4.6l-.1-.1a5.5 5.5 0 0 0-7.8 7.8l.1.1L12 20.2l7.8-7.8a5.5 5.5 0 0 0 0-7.8z"/></svg>
+  Nama pilihan <span class="n" id="n-favorit">0</span>
+</button>
+
+<div class="laci" id="laci-favorit" aria-hidden="true">
+  <div class="tabir"></div>
+  <aside class="kertas" role="dialog" aria-label="Daftar nama pilihan">
+    <div class="kepala">
+      <h2>Catatan nama pilihan</h2>
+      <button class="tutup" id="tutup-laci" type="button" aria-label="Tutup">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <p class="catatan">— untuk dibaca pelan-pelan berdua —</p>
+    <div class="isi" id="isi-favorit"></div>
+    <div class="bagian-bawah">
+      <button class="tombol-besar" id="salin-semua" type="button">Salin seluruh daftar</button>
+      <button class="tombol-besar wa" id="bagikan-wa" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        Kirim ke WhatsApp
+      </button>
+    </div>
+  </aside>
+</div>
+
+<div id="toast" style="position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:#123f2e;color:#f8f3e7;padding:10px 18px;border-radius:8px;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:60;box-shadow:0 8px 20px rgba(0,0,0,.25)"></div>
+
+<script src="names.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
