@@ -76,6 +76,12 @@
       kalimat = 'Kedua nama belum terdata di basis kami, jadi kami belum bisa menuliskan gabungan artinya. Coba pilih nama yang sudah terverifikasi lewat halaman cari nama.';
     }
 
+    var ejaan = [];
+    bagian.forEach(function (b, i) {
+      if (d[i] && normal(d[i].n) !== normal(b)) ejaan.push(b + ' kami kenali sebagai ejaan lain dari ' + d[i].n + '.');
+    });
+    if (ejaan.length) kalimat += ' ' + ejaan.join(' ');
+
     $('r-ar').textContent = arab || '—';
     $('r-lat').textContent = lat;
     $('r-arti').textContent = kalimat;

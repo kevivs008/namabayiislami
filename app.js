@@ -161,7 +161,7 @@
       '<dt>Rujukan</dt><dd>' + n.r + '</dd>' +
       '<dt>Tema</dt><dd>' + n.t.map(function (t) { return LABEL_TEMA[t]; }).join(', ') + '</dd>' +
       '<dt>Panggilan sayang</dt><dd>' + n.nk.join(', ') + '</dd>' +
-      (n.v.length ? '<dt>Tulisan lain</dt><dd>' + n.v.join(', ') + '</dd>' : '') +
+      ((n.v || []).length ? '<dt>Tulisan lain</dt><dd>' + n.v.join(', ') + '</dd>' : '') +
       '<dt>Keyakinan arti</dt><dd>' + (n.con === 'tinggi' ? 'Tinggi — makna disepakati rujukan utama' : 'Sedang — makna bisa berbeda antar rujukan') + '</dd>' +
       '</dl></div>';
     html += '</article>';
