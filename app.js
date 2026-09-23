@@ -307,6 +307,13 @@
     setTimeout(function () { el.classList.remove('on'); }, 2200);
   }
 
+  /* parameter pencarian dari URL (?cari=... atau ?q=...) — mendukung SearchAction schema */
+  try {
+    var param = new URLSearchParams(window.location.search);
+    var qURL = param.get('cari') || param.get('q');
+    if (qURL) { elInput.value = qURL; state.kueri = qURL; }
+  } catch (e) {}
+
   perbaruiBadge();
   render();
 })();
