@@ -307,6 +307,13 @@
     setTimeout(function () { el.classList.remove('on'); }, 2200);
   }
 
+  /* preset jenis kelamin dari atribut body (halaman landing perempuan/laki-laki) */
+  var presetG = document.body.getAttribute('data-gender');
+  if (presetG === 'L' || presetG === 'P') {
+    state.f.gender = presetG;
+    document.querySelectorAll('[data-f="gender"] button').forEach(function (b) { b.classList.toggle('on', b.dataset.val === presetG); });
+  }
+
   /* parameter pencarian dari URL (?cari=... atau ?q=...) — mendukung SearchAction schema */
   try {
     var param = new URLSearchParams(window.location.search);
