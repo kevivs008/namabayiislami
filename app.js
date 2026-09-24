@@ -117,7 +117,7 @@
 
   /* ---------- DOM ---------- */
   var DATA = window.NAMA_DATA || [];
-  var LABEL_SUMBER = { quran: 'Al-Qur\'an', nabi: 'Nama Nabi', sahabat: 'Sahabat', sahabiyah: 'Sahabiyah', asmaul: 'Asmaul Husna' };
+  var LABEL_SUMBER = { quran: 'Al-Qur\'an', nabi: 'Nama Nabi', sahabat: 'Sahabat', sahabiyah: 'Sahabiyah', asmaul: 'Asmaul Husna', hadits: 'Hadits' };
   var LABEL_GENDER = { L: 'Laki-laki', P: 'Perempuan', B: 'L / P' };
   var LABEL_TEMA = { cahaya: 'Cahaya', keindahan: 'Keindahan', kekuatan: 'Kekuatan', hikmah: 'Kebijaksanaan',
     kebaikan: 'Kebaikan', kemuliaan: 'Kemuliaan', 'iman-takwa': 'Iman & Takwa', surga: 'Surga', harapan: 'Doa & Harapan', ketenangan: 'Ketenangan' };
