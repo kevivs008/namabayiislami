@@ -284,3 +284,15 @@ footer.site a{color:#c8d9cc}
   .hero-in{padding-top:34px}
 }
 @media print{.tombol-favorit,.laci{display:none}}
+
+/* ---------- artikel: daftar nama & remah roti ---------- */
+.remah{font-size:13px;color:var(--tinta-lembut);margin-bottom:14px}
+.remah a{color:var(--hijau-daun)}
+.entri{border:1px solid var(--garis);border-radius:var(--r);background:var(--kertas);padding:14px 16px;margin:10px 0;box-shadow:var(--bayang)}
+.entri .kepala{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.entri .nm{font-family:'Alegreya',Georgia,serif;font-weight:700;font-size:19px;color:var(--hijau-tua)}
+.entri .ar{font-size:22px;color:var(--tinta)}
+.entri .arti{margin:6px 0 0;font-size:14.5px}
+.entri .rujuk{margin:4px 0 0;font-size:13px;color:var(--tinta-lembut)}
+.entri .alt{margin:4px 0 0;font-size:13px;color:var(--tinta-lembut)}
+.artikel h3{font-size:17px;margin:20px 0 6px}
