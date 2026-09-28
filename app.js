@@ -140,12 +140,16 @@
     return p[nama] || '';
   }
 
+  function slugNama(n) {
+    return n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
   function kartuHTML(n) {
     var fav = bacaFavorit().indexOf(n.n) !== -1;
     var html = '<article class="kartu" data-nama="' + n.n + '">';
     if (n.tp) html += '<span class="stempel">Tidak Pasaran</span>';
     html += '<div class="ar-bebas ar ar-besar">' + n.ar + '</div>';
-    html += '<div class="nama-latin">' + n.n + '</div>';
+    html += '<div class="nama-latin"><a href="/arti-nama/' + slugNama(n.n) + '/">' + n.n + '</a></div>';
     html += '<div class="translit">' + n.tr + '</div>';
     html += '<div class="arti">' + n.m + '</div>';
     html += '<div class="lencana">';

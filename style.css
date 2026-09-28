@@ -296,3 +296,26 @@ footer.site a{color:#c8d9cc}
 .entri .rujuk{margin:4px 0 0;font-size:13px;color:var(--tinta-lembut)}
 .entri .alt{margin:4px 0 0;font-size:13px;color:var(--tinta-lembut)}
 .artikel h3{font-size:17px;margin:20px 0 6px}
+
+/* ---------- arti nama ---------- */
+.artikel .lead{font-size:16px;color:var(--tinta-lembut);margin-bottom:22px}
+.fakta.ar-besar{font-size:44px;color:var(--hijau-tua);text-align:center;margin:8px 0 18px;line-height:1.7}
+.fakta-baris{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;background:var(--kertas);border:1px solid var(--garis);border-radius:var(--r);padding:16px 20px;margin:0 0 8px}
+.fakta-baris dt{font-weight:700;color:var(--hijau-tua);font-family:'Alegreya',serif;white-space:nowrap}
+.fakta-baris dd{margin:0;font-size:15px}
+.terkait{margin:10px 0 0;padding-left:0;list-style:none}
+.terkait li{border:1px solid var(--garis);border-radius:8px;background:var(--kertas);padding:9px 14px;margin:8px 0;font-size:14.5px}
+.terkait a{font-weight:700;color:var(--hijau-tua);font-family:'Alegreya',serif}
+.terkait span{color:var(--tinta-lembut)}
+.nama-latin a{color:inherit;text-decoration:none;border-bottom:1px solid var(--emas-muda);transition:border-color .15s}
+.nama-latin a:hover{border-bottom-color:var(--emas)}
+.hub-nav{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 22px}
+.hub-nav a{min-width:34px;text-align:center;border:1px solid var(--garis);border-radius:8px;padding:5px 10px;font-weight:700;color:var(--hijau-tua);background:var(--kertas)}
+.hub-nav a:hover{border-color:var(--emas)}
+.hub-bagian h2{border-top:1px solid var(--garis);padding-top:18px}
+.hub-daftar{list-style:none;padding:0;margin:0}
+.hub-daftar li{padding:7px 0;border-bottom:1px solid var(--garis);font-size:15px}
+.hub-daftar li:last-child{border-bottom:none}
+.hub-daftar a{font-weight:700;font-family:'Alegreya',serif;color:var(--hijau-tua)}
+.hub-daftar span{color:var(--tinta-lembut)}
+@media(min-width:760px){.hub-daftar{columns:2;column-gap:36px}.hub-daftar li{break-inside:avoid}}
