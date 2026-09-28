@@ -314,6 +314,13 @@
     document.querySelectorAll('[data-f="gender"] button').forEach(function (b) { b.classList.toggle('on', b.dataset.val === presetG); });
   }
 
+  /* preset sumber dari atribut body (halaman landing al-qur'an) */
+  var presetS = document.body.getAttribute('data-sumber');
+  if (presetS && document.getElementById('f-sumber')) {
+    state.f.sumber = presetS;
+    document.getElementById('f-sumber').value = presetS;
+  }
+
   /* parameter pencarian dari URL (?cari=... atau ?q=...) — mendukung SearchAction schema */
   try {
     var param = new URLSearchParams(window.location.search);
