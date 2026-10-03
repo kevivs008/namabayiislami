@@ -1,0 +1,29 @@
+name: Deploy to Cloudflare Workers
+
+# Deploys the static-assets Worker on every push to main, and can be run
+# manually from the Actions tab. This runs on GitHub's runners and calls the
+# Cloudflare upload API directly, so it does NOT depend on Cloudflare's
+# Workers Builds container (which was failing to initialise).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy static assets with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
