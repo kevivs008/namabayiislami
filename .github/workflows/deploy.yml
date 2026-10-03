@@ -6,8 +6,9 @@ name: Deploy to Cloudflare Workers
 # Workers Builds container (which was failing to initialise).
 
 on:
-  push:
-    branches: [main]
+  # Manual-only fallback: Cloudflare Workers Builds handles deploys on push.
+  # Use this only if Workers Builds is down again (requires repo secrets
+  # CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to be set).
   workflow_dispatch:
 
 concurrency:
